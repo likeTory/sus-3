@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-gdv_%*1$z+os2^^sz($#ma0en#uo+$vfom97dw(uf=v7^n!2^l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["127.0.0.1", "localhost", "13.125.229.197" ]
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", "13.125.229.197"]
 
 
 # Application definition
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'landing',
-    
+
 
 ]
 
@@ -119,6 +119,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+STATIC_ROOT = "./static/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
