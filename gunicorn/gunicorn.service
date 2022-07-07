@@ -5,12 +5,12 @@ After=network.target
 [Service]
 User=ubuntu
 Group=ubuntu
-WorkingDirectory=/home/ubuntu/sus_3
+WorkingDirectory=/home/ubuntu/sus-3
 ExecStart=/home/ubuntu/sus-3/venv_django/bin/gunicorn \
     --access-logfile gunicorn/gunicorn-access.log \
     --error-logfile gunicorn/gunicorn-error.log \
     --workers 3 \
-    --bind unix:/home/ubuntu/sus_3/gunicorn/django.sock \
+    --bind unix:/home/ubuntu/sus-3/gunicorn/django.sock \
     sus_3.wsgi:application
 
 [Install]
