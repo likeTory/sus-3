@@ -10,7 +10,7 @@ ExecStart=/home/ubuntu/sus-3/venv_django/bin/gunicorn \
     --access-logfile gunicorn/gunicorn-access.log \
     --error-logfile gunicorn/gunicorn-error.log \
     --workers 3 \
-    --bind unix:/home/ubuntu/<프로젝트 경로>/gunicorn/django.sock \
+    --bind unix:/home/ubuntu/sus-3/gunicorn/django.sock \
     sus_3.wsgi:application
 
 [Install]
